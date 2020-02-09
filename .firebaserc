@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "angular-firebase-rxjs-80c14": {
+      "hosting": {
+        "post": [
+          "angular-firebase-rxjs-80c14"
+        ]
+      }
+    }
+  }
+}
