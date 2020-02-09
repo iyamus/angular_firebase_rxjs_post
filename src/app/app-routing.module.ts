@@ -6,13 +6,12 @@ import { PostComponent } from "../app/post/post.component";
 
 const routes: Routes = [
   {path:'', component: MainComponent},
-  {path:'add', component: AddpostComponent},
-  {path:'main', component: MainComponent},
-  {path:'post', component: PostComponent},
+  {path:'addpost', component: AddpostComponent},
+  {path:'post/:id', component: PostComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {scrollPositionRestoration:"enabled"})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
