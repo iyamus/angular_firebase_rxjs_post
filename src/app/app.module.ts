@@ -12,10 +12,18 @@ import { AngularFirestoreModule } from "@angular/fire/firestore";
 import { AngularFireStorageModule, BUCKET } from "@angular/fire/storage";
 
 
+// component list
+import { AddpostComponent } from "../app/addpost/addpost.component";
+import { MainComponent } from "../app/main/main.component";
+import { PostComponent } from "../app/post/post.component";
+
+
 @NgModule({
   declarations: [
     AppComponent,
-
+    AddpostComponent,
+    MainComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +32,7 @@ import { AngularFireStorageModule, BUCKET } from "@angular/fire/storage";
     AngularFirestoreModule,
     AngularFireStorageModule
   ],
-  providers: [ { provide: BUCKET, useValue: 'gs://angular-firebase-rxjs-80c14.appspot.com' }],
+  providers: [{ provide: BUCKET, useValue: 'gs://angular-firebase-rxjs-80c14.appspot.com' }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
